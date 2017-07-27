@@ -9,8 +9,56 @@
 ## Technologies (NPM packages, etc):
 * Passport for authentication(?)
 * Chart package for charts
+* Zillow API
 
-## Resourceful links:
+## Resourceful links/starter code: 
+
+### Node requires
+- MYSQL
+- Express
+- body-parser
+- mongoose
+- nightmare
+- axios(?)
+
+### D3
+- **https://d3js.org/**
+- **https://github.com/d3/d3/wiki/gallery**
+- https://www.jasondavies.com/maps/bounds/
+- https://bl.ocks.org/mbostock/4341417
+- https://bl.ocks.org/mbostock/4063269
+- http://bl.ocks.org/mbostock/3943967
+- http://bl.ocks.org/NPashaP/9994181
+- https://bl.ocks.org/mbostock/3828981 (maybe?)
+- https://bl.ocks.org/mbostock/7607535 (maybe?)
+- https://bost.ocks.org/mike/nations/ (maybe?)
+
+### MySQL
+- https://www.npmjs.com/package/mysql
+
+### Mongoose
+- http://mongoosejs.com/docs/guide.html
+
+### PHP
+
+### Laravel
+
+### DATA
+- Zillow API: 
+- https://www.zillow.com/howto/api/APIOverview.htm
+- 1,000 calls limit
+- ZWSID:  X1-ZWz1fx492w1h57_3csw9
+- **Search Api**
+- **Mortgage Estimate API**
+- **GetChart API (?)**
+- **Reviews API**
+
+## Stuff to think about:
+- realty-parser: https://www.npmjs.com/package/realty-parser
+    - Collection of parsers to get data from various real estate sites:
+      
+
+
 
 ## Research:
 
@@ -45,6 +93,9 @@
 - What value does your site/app bring?
 
 * **Remember MVP**
+
+## Future Devs:
+- Add airbnb to it [airbnbify](https://www.npmjs.com/package/airbnbify)
 
 
 
