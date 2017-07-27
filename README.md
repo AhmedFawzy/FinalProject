@@ -57,14 +57,9 @@
 - realty-parser: https://www.npmjs.com/package/realty-parser
     - Collection of parsers to get data from various real estate sites:
       
-
-
-
-## Research:
-
 ## Project Requirements:
 * Must use a Front-end (ReactJS, Vue, Angular, etc.) and a Backend framework / Library (Laravel, Express, Django, Joomla, etc.)
-<span style="color:blue">D3, Laravel & Express</span>
+    - ``D3, Laravel & Express``
 	
 - **CHALLENGE YOURSELF!**
 
@@ -88,7 +83,7 @@
 
 * Idea(s) must be approved by Instructional Staff
 - What problem are solving?
-    - ``Creating a 'one stop shop' for investors to buy and manage properties``
+    - ``Creating a 'one stop shop' for investors to assess and manage properties``
 
 - What value does your site/app bring?
 
