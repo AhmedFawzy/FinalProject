@@ -21,15 +21,16 @@
 - **CHALLENGE YOURSELF!**
 
 * Must be backed by a MySQL or MongoDB Database with a Sequelize, Mongoose, or create your ORM.
-<span style="color:blue">MySQL Database to store homes and data for charts, mongoose</span>
+
+    - ``MySQL Database to store homes and data for charts + mongoose``
 
 * Must be deployed using Heroku (with Data)
 
 * Must utilize at least two libraries, packages, or technologies that we haven’t discussed or you haven't used.
-<span style="color:blue">Chart NPM Package & </span>
+    - ``Chart NPM Package + ``
 
 * Require or involve authentication of users in some way (Custom, Passport, or library of somesort)
-<span style="color:blue">Passport</span>
+    - ``Passport``
 
 * Must have a polished frontend / UI 
 
@@ -39,7 +40,7 @@
 
 * Idea(s) must be approved by Instructional Staff
 - What problem are solving?
-<span style="color:blue">Creating a 'one stop shop' for investors to buy and manage properties</span>
+    - ``Creating a 'one stop shop' for investors to buy and manage properties``
 
 - What value does your site/app bring?
 
