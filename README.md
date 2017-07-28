@@ -91,6 +91,7 @@
 
 ## Future Devs:
 - Add airbnb to it [airbnbify](https://www.npmjs.com/package/airbnbify)
+- Email them with appreciation value
 
 
 
