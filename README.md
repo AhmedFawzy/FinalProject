@@ -53,6 +53,13 @@
 - **GetChart API (?)**
 - **Reviews API**
 
+## Style:
+
+* Green #5cb85c
+* Blue #097480
+* Red #d95250
+* Orange #f0ad4f
+
 ## Stuff to think about:
 - realty-parser: https://www.npmjs.com/package/realty-parser
     - Collection of parsers to get data from various real estate sites:
