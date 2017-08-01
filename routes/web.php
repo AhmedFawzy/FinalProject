@@ -16,14 +16,14 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return view('pages.login');
+    return view('layouts.app');
 
     // redirect to dashboard
 
 });
 
 Route::get('/register', function () {
-    return view('pages.register');
+    return view('layouts.app');
 
     // redirect to dashboard
 
@@ -38,5 +38,9 @@ Route::get('/homes/{id}', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('pages.dashboard');
+    return view('home');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
