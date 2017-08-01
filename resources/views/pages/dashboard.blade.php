@@ -1,4 +1,5 @@
 @include('includes.navbar')
+@include('../dashboard.Sidebar')
 
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
