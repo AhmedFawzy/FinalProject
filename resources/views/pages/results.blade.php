@@ -1,4 +1,9 @@
+{{--
+@include('dashboard.DashNav')
 @include('includes.navbar')
+@include('dashboard.Sidebar')
+@include('dashboard.Graphs')
+--}}
 
 
 <!doctype html>

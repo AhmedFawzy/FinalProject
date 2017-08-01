@@ -1,4 +1,3 @@
-@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -15,3 +14,7 @@
     </div>
 </div>
 @endsection
+
+@include('dashboard.DashNav')
+@include('dashboard.Sidebar')
+@include('dashboard.Graphs')
