@@ -1,5 +1,4 @@
 @include('includes.navbar')
-@include('dashboard.Graphs')
 
 
 <!doctype html>
