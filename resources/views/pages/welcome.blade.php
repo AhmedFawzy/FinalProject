@@ -27,6 +27,7 @@
 <?php
 
 $client = new \GuzzleHttp\Client();
+
 $res = $client->request('GET', 'http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA ');
 //echo $res->getStatusCode();
 // 200
