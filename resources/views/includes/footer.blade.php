@@ -13,7 +13,7 @@
 
     <footer class="footer">
             <p class="copyright text-center">
-                &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Sakina Shivji</a>
+                &copy; <script>document.write(new Date().getFullYear())</script> <a href="/home">Sakina Shivji</a>
             </p>
     </footer>
 

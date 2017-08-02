@@ -1,20 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
-    <div class="container">
-            <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                            <div class="panel panel-default">
-                                    <div class="panel-heading">Dashboard</div>
-
-                                    <div class="panel-body">
-                                            You are logged in!
-                                        </div>
-                                </div>
-                        </div>
-                </div>
-        </div>
-    @endsection
 
 <!doctype html>
 <html lang="en">
@@ -64,13 +47,13 @@
         <div class="sidebar-wrapper">
             <ul class="nav">
                 <li class="active">
-                    <a href="dashboard.html">
+                    <a href="/home">
                         <i class="material-icons">dashboard</i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 <li>
-                    <a href="user.html">
+                    <a href="/home">
                         <i class="material-icons">person</i>
                         <p>My Profile</p>
                     </a>
@@ -89,48 +72,51 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Material Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="material-icons">dashboard</i>
-                                <p class="hidden-lg hidden-md">Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="material-icons">notifications</i>
-                                <span class="notification">5</span>
-                                <p class="hidden-lg hidden-md">Notifications</p>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Mike John responded to your email</a></li>
-                                <li><a href="#">You have 5 new tasks</a></li>
-                                <li><a href="#">You're now friend with Andrew</a></li>
-                                <li><a href="#">Another Notification</a></li>
-                                <li><a href="#">Another One</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
-                                <i class="material-icons">person</i>
-                                <p class="hidden-lg hidden-md">Profile</p>
-                            </a>
-                        </li>
-                    </ul>
 
-                    <form class="navbar-form navbar-right" role="search">
+                    <div class="collapse navbar-collapse" id="app-navbar-collapse">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="nav navbar-nav">
+                            &nbsp;
+                        </ul>
+
+                        <!-- Right Side Of Navbar -->
+                        <ul class="nav navbar-nav navbar-right">
+                            <!-- Authentication Links -->
+                            @if (Auth::guest())
+                                <li><a href="{{ route('login') }}">Login</a></li>
+                                <li><a href="{{ route('register') }}">Register</a></li>
+                            @else
+                                <a href="#" aria-expanded="false">
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+                                <br>
+
+
+                                <a href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+                            @endif
+                        </ul>
+                    </div>
+
+                    {{--<form class="navbar-form navbar-right" role="search">
                         <div class="form-group  is-empty">
                             <input type="text" class="form-control" placeholder="Search">
                             <span class="material-input"></span>
                         </div>
-                        <button type="submit" class="btn btn-white btn-round btn-just-icon">
+                        <button type="submit" class="btn btn-white btn-round btn-just-icon navbar-form navbar-right">
                             <i class="material-icons">search</i>
                             <div class="ripple-container"></div>
                         </button>
-                    </form>
+                    </form>--}}
                 </div>
             </div>
         </nav>

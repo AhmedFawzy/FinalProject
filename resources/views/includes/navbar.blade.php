@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -14,26 +16,6 @@
 
 <body>
 
-<h4>navbar</h4>
-
-{{--<div class="container">
-    <div class="row">
-
-        --}}{{--SEARCH BAR--}}{{--
-        <div class="col-lg-4">
-
-            <h3>navbar</h3>
-
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">Go!</button>
-                </span>
-            </div><!-- /input-group -->
-        </div><!-- /.col-lg-6 -->
-
-    </div>
-</div>--}}
 
 </body>
 
