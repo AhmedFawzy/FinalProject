@@ -9,6 +9,22 @@
 
     <title>Welcome</title>
 
+
+        <!-- Bootstrap core CSS     -->
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!--  Material Dashboard CSS    -->
+        <link href="../assets/css/material-dashboard.css" rel="stylesheet"/>
+
+        <!--  CSS for Demo Purpose, don't include it in your project     -->
+        <link href="../assets/css/demo.css" rel="stylesheet"/>
+
+        <!--     Fonts and icons     -->
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet'
+              type='text/css'>
+
+
 </head>
 
 <body>
@@ -38,10 +54,15 @@ echo $res->getBody();
 
 // Send an asynchronous request.
 $request = new \GuzzleHttp\Psr7\Request('GET', 'http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA ');
-$promise = $client->sendAsync($request)->then(function ($response) {
-    echo 'I completed! ' . $response->getBody();
-});
-$promise->wait();
 
+/*$xml = XmlParser::load('path/to/above.xml');
+$address = $xml->parse([
+    'street' => ['uses' => 'address.street'],
+    'zip' => ['uses' => 'address.zipcode'],
+    'city' => ['uses' => 'address.city'],
+    'state' => ['uses' => 'address.state'],
+]);
+
+var_dump($xml);*/
 
 

@@ -72,6 +72,10 @@ class ComposerStaticInit8f1135388c9ff3f7d755a423272fae0f
             'Psr\\Http\\Message\\' => 17,
             'PhpParser\\' => 10,
         ),
+        'O' => 
+        array (
+            'Orchestra\\Parser\\' => 17,
+        ),
         'M' => 
         array (
             'Monolog\\' => 8,
@@ -82,6 +86,7 @@ class ComposerStaticInit8f1135388c9ff3f7d755a423272fae0f
             'League\\Flysystem\\' => 17,
             'League\\Event\\' => 13,
             'Lcobucci\\JWT\\' => 13,
+            'Laravie\\Parser\\' => 15,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Passport\\' => 17,
         ),
@@ -226,6 +231,10 @@ class ComposerStaticInit8f1135388c9ff3f7d755a423272fae0f
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Orchestra\\Parser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/orchestra/parser/src',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
@@ -245,6 +254,10 @@ class ComposerStaticInit8f1135388c9ff3f7d755a423272fae0f
         'Lcobucci\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
+        ),
+        'Laravie\\Parser\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravie/parser/src',
         ),
         'Laravel\\Tinker\\' => 
         array (
@@ -1733,6 +1746,11 @@ class ComposerStaticInit8f1135388c9ff3f7d755a423272fae0f
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',
         'Laravel\\Tinker\\TinkerCaster' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerCaster.php',
         'Laravel\\Tinker\\TinkerServiceProvider' => __DIR__ . '/..' . '/laravel/tinker/src/TinkerServiceProvider.php',
+        'Laravie\\Parser\\Document' => __DIR__ . '/..' . '/laravie/parser/src/Document.php',
+        'Laravie\\Parser\\InvalidContentException' => __DIR__ . '/..' . '/laravie/parser/src/InvalidContentException.php',
+        'Laravie\\Parser\\Reader' => __DIR__ . '/..' . '/laravie/parser/src/Reader.php',
+        'Laravie\\Parser\\Xml\\Document' => __DIR__ . '/..' . '/laravie/parser/src/Xml/Document.php',
+        'Laravie\\Parser\\Xml\\Reader' => __DIR__ . '/..' . '/laravie/parser/src/Xml/Reader.php',
         'Lcobucci\\JWT\\Builder' => __DIR__ . '/..' . '/lcobucci/jwt/src/Builder.php',
         'Lcobucci\\JWT\\Claim' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim.php',
         'Lcobucci\\JWT\\Claim\\Basic' => __DIR__ . '/..' . '/lcobucci/jwt/src/Claim/Basic.php',
@@ -2026,6 +2044,10 @@ class ComposerStaticInit8f1135388c9ff3f7d755a423272fae0f
         'Monolog\\Processor\\UidProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/UidProcessor.php',
         'Monolog\\Processor\\WebProcessor' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Processor/WebProcessor.php',
         'Monolog\\Registry' => __DIR__ . '/..' . '/monolog/monolog/src/Monolog/Registry.php',
+        'Orchestra\\Parser\\XmlServiceProvider' => __DIR__ . '/..' . '/orchestra/parser/src/XmlServiceProvider.php',
+        'Orchestra\\Parser\\Xml\\Document' => __DIR__ . '/..' . '/orchestra/parser/src/Xml/Document.php',
+        'Orchestra\\Parser\\Xml\\Facade' => __DIR__ . '/..' . '/orchestra/parser/src/Xml/Facade.php',
+        'Orchestra\\Parser\\Xml\\Reader' => __DIR__ . '/..' . '/orchestra/parser/src/Xml/Reader.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
         'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/AssertionFailedError.php',
         'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
