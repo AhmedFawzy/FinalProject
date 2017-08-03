@@ -76,7 +76,7 @@
 
 * Must be backed by a MySQL or MongoDB Database with a Sequelize, Mongoose, or create your ORM.
 
-    - ``MySQL Database to store homes and data for charts + mongoose``
+    - ``MySQL Database to store homes and data for charts + sequelize``
 
 * Must be deployed using Heroku (with Data)
 
