@@ -48,11 +48,11 @@ $response = $client->request('GET', $request_url, [
     'timeout' => 120
 ])->getBody()->getContents();
 
-use Zillow\ZillowClient;
+/*use Zillow\ZillowClient;
 
 $client = new ZillowClient('ZWSID');
 
-$response = $client->GetSearchResults(['address' => '5400 Tujunga Ave', 'citystatezip' => 'North Hollywood, CA 91601']);
+$response = $client->GetSearchResults(['address' => '5400 Tujunga Ave', 'citystatezip' => 'North Hollywood, CA 91601']);*/
 
 
 

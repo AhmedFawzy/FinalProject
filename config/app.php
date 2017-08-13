@@ -135,6 +135,8 @@ return [
     |
     */
 
+
+
     'providers' => [
 
         /*
@@ -181,8 +183,9 @@ return [
         Orchestra\Parser\XmlServiceProvider::class
 
 
-
     ],
+
+
 
     /*
     |--------------------------------------------------------------------------
