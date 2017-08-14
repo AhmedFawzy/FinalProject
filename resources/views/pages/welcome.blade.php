@@ -51,12 +51,24 @@ if ($xml === false) {
     }
 } else {
     $address = ($xml->request->address);
-    echo "<h1 class='text-center'>" . $address . "</h1>" . "<br>";
+    echo "<h1 class='text-center'>" . "<h1 class='text-center'> Address: " . $address ."</h1>". "</h1>" . "<br>";
 
     $citystatezip = ($xml->request->citystatezip);
-    echo "<h1 class='text-center'>" . $citystatezip . "</h1>" . "<br>";
+    echo "<h1 class='text-center'>" . "<h1 class='text-center'> City: " . $citystatezip ."</h1>". "</h1>" . "<br>";
+
+    $zipcode = ($xml->response->results->result->address->zipcode);
+    echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zipcode: " . $zipcode ."</h3>". "</h3>" . "<br>";
+
+
+
+    $zpid = ($xml->response->results->result->zpid);
+    echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zillow ID: " . $zpid ."</h3>". "</h3>" . "<br>";
+
 
     var_dump($xml->response->results->result);
+
+
+
 }
 
 
