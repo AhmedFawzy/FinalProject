@@ -3,16 +3,17 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
-    "type": "project",
+    "type": "projeccomposer require fabpot/gouttet",
     "require": {
         "php": ">=5.6.4",
-        "guzzlehttp/guzzle": "^6.3",
+        "fabpot/goutte": "^3.2",
+        "guzzlehttp/guzzle": "^6.0",
         "laravel/framework": "5.4.*",
         "laravel/passport": "^3.0",
         "laravel/tinker": "~1.0",
         "orchestra/parser": "~3.0",
-        "vinceg/zillow": "~1.0",
-        "yajra/zillow": "~2.0"
+        "weidner/goutte": "^1.0",
+        "yajra/zillow": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

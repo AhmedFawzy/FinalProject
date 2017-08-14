@@ -1,5 +1,6 @@
 @include('includes.navbar')
 
+
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
@@ -32,7 +33,7 @@
 
 <?php
 
-$client = new \GuzzleHttp\Client();
+/*$client = new \GuzzleHttp\Client();
 
 $res = $client->request('GET', 'http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA ');
 echo $res->getBody();
@@ -42,11 +43,13 @@ $request = new \GuzzleHttp\Psr7\Request('GET', 'http://www.zillow.com/webservice
 
 $request_url = "http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA";
 
+
 $client = new \GuzzleHttp\Client();
 $response = $client->request('GET', $request_url, [
     'headers' => ['Accept' => 'application/xml'],
     'timeout' => 120
-])->getBody()->getContents();
+])->getBody()->getContents();*/
+
 
 /*use Zillow\ZillowClient;
 
@@ -55,4 +58,7 @@ $client = new ZillowClient('ZWSID');
 $response = $client->GetSearchResults(['address' => '5400 Tujunga Ave', 'citystatezip' => 'North Hollywood, CA 91601']);*/
 
 
+$url = 'https://www.trulia.com/property/3276449872-1742-Jones-St-San-Francisco-CA-94109';
+$html = file_get_contents($url);
+echo $html;
 
