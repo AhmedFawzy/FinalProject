@@ -13,7 +13,8 @@
         "laravel/tinker": "~1.0",
         "orchestra/parser": "~3.0",
         "weidner/goutte": "^1.0",
-        "yajra/zillow": "~1.0"
+        "yajra/zillow": "~1.0",
+        "sunra/php-simple-html-dom-parser": "1.5.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

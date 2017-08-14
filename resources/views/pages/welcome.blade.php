@@ -1,7 +1,7 @@
 @include('includes.navbar')
 
 
-<!doctype html>
+        <!doctype html>
 <html lang="{{ app()->getLocale() }}">
 <head>
     <meta charset="utf-8">
@@ -10,10 +10,10 @@
 
     <title>Welcome</title>
 
-        <!--     Fonts and icons     -->
-        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet'
-              type='text/css'>
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet'
+          type='text/css'>
 
 
 </head>
@@ -21,7 +21,7 @@
 <body>
 <form action="/" method="POST">
     Search by address:<br>
-    <input type="text" name="search" value="2114 Bigelow Ave"><br>
+    <input type="text" name="search" value="Townhomes at Lucaya Lake Club by Ryan Homes"><br>
     <button type="submit">Submit</button>
 </form>
 
@@ -32,6 +32,9 @@
 @include('includes.footer')
 
 <?php
+
+
+require('simple_html_dom.php');
 
 /*$client = new \GuzzleHttp\Client();
 
@@ -58,7 +61,11 @@ $client = new ZillowClient('ZWSID');
 $response = $client->GetSearchResults(['address' => '5400 Tujunga Ave', 'citystatezip' => 'North Hollywood, CA 91601']);*/
 
 
-$url = 'https://www.trulia.com/property/3276449872-1742-Jones-St-San-Francisco-CA-94109';
+/*$url = 'https://www.trulia.com/builder-community/Townhomes-at-Lucaya-Lake-Club-3268866340/';
 $html = file_get_contents($url);
-echo $html;
+echo $html;*/
+
+$html = file_get_html('https://www.trulia.com/builder-community/Townhomes-at-Lucaya-Lake-Club-3268866340/');
+
+    var_dump($html->root->nodes);
 
