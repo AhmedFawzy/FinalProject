@@ -21,7 +21,7 @@
 <body>
 <form action="/" method="POST" class="text-center">
     Search by address:<br>
-    <input type="text" name="search" value="2114 Bigelow Ave"><br>
+    <input type="text" name="search" value="Townhomes at Lucaya Lake Club"><br>
     <button type="submit">Submit</button>
 </form>
 
@@ -59,29 +59,13 @@ if ($xml === false) {
     $zipcode = ($xml->response->results->result->address->zipcode);
     echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zipcode: " . $zipcode ."</h3>". "</h3>" . "<br>";
 
-
-
     $zpid = ($xml->response->results->result->zpid);
     echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zillow ID: " . $zpid ."</h3>". "</h3>" . "<br>";
 
 
     var_dump($xml->response->results->result);
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -106,9 +90,9 @@ echo $html;*/
 
 /*$html = file_get_html('https://www.trulia.com/builder-community/Townhomes-at-Lucaya-Lake-Club-3268866340/');
 
-var_dump($html);*/
+$array = ($html->root);
 
-/*foreach ( $array->nodes as $home ) {
+foreach ( $array->nodes as $home ) {
 //	var_dump( $gif->images->original);
     echo $home;
 }*/
