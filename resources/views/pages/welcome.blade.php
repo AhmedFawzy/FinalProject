@@ -66,7 +66,31 @@ if ($xml === false) {
 
 
 
-    var_dump($xml->response->results->result->localRealEstate);
+    //var_dump($xml->request);
+
+}
+
+$client2 = new \GuzzleHttp\Client();
+
+$res2 = $client2->request('GET', 'http://www.zillow.com/webservice/GetChart.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&unit-type=percent&zpid=48749425&width=300&height=150');
+$xmlParse2 = ($res2->getBody());
+
+libxml_use_internal_errors(true);
+
+$xml2 = simplexml_load_string($xmlParse2);
+if ($xml2 === false) {
+    echo "Failed loading XML: ";
+    foreach(libxml_get_errors() as $error2) {
+        echo "<br>", $error2->message;
+    }
+} else {
+
+    $graph = ($xml2->response->url);
+    echo "<img src=" . $graph ." >";
+
+    var_dump($xml2->response);
+
+
 
 }
 
