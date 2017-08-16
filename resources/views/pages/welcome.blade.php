@@ -62,7 +62,7 @@ if ($xml === false) {
     echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zillow ID: " . $zpid ."</h3>". "</h3>" . "<br>";
 
     $zestimateAmount = ($xml->response->results->result->zestimate->amount);
-    echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zestimate Amount: " . $zestimateAmount ."</h3>". "</h3>" . "<br>";
+    echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zestimate Amount: $" . $zestimateAmount ."</h3>". "</h3>" . "<br>";
 
 
 
@@ -86,14 +86,34 @@ if ($xml2 === false) {
 } else {
 
     $graph = ($xml2->response->url);
-    echo "<img src=" . $graph ." >";
+    echo "<img class='text-center'' src=" . $graph ." >";
 
-    var_dump($xml2->response);
-
-
+    //var_dump($xml2->response);
 
 }
 
+$client3 = new \GuzzleHttp\Client();
+
+$res3 = $client3->request('GET', 'http://www.zillow.com/webservice/GetUpdatedPropertyDetails.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&zpid=48749425');
+$xmlParse3 = ($res3->getBody());
+
+libxml_use_internal_errors(true);
+
+$xml3 = simplexml_load_string($xmlParse3);
+if ($xml3 === false) {
+    echo "Failed loading XML: ";
+    foreach(libxml_get_errors() as $error3) {
+        echo "<br>", $error3->message;
+    }
+} else {
+
+    $image = ($xml3->response->images->image->url);
+    echo "<img class='text-center'' src=" . $image ." >";
+
+    var_dump($xml3->response->images->image->url);
+
+
+}
 
 
 
