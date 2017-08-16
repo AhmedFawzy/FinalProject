@@ -38,7 +38,6 @@ require('simple_html_dom.php');
 $client = new \GuzzleHttp\Client();
 
 $res = $client->request('GET', 'http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA ');
-$res2 = $client->request('GET', 'http://www.zillow.com/webservice/GetSearchResults.htm?zws-id=X1-ZWz1fx492w1h57_3csw9&address=2114+Bigelow+Ave&citystatezip=Seattle%2C+WA');
 $xmlParse = ($res->getBody());
 
 libxml_use_internal_errors(true);
@@ -62,8 +61,12 @@ if ($xml === false) {
     $zpid = ($xml->response->results->result->zpid);
     echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zillow ID: " . $zpid ."</h3>". "</h3>" . "<br>";
 
+    $zestimateAmount = ($xml->response->results->result->zestimate->amount);
+    echo "<h3 class='text-center'>" . "<h3 class='text-center'> Zestimate Amount: " . $zestimateAmount ."</h3>". "</h3>" . "<br>";
 
-    var_dump($xml->response->results->result);
+
+
+    var_dump($xml->response->results->result->localRealEstate);
 
 }
 
