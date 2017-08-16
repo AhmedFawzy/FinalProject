@@ -39,7 +39,7 @@
                     </div>
                     <div class="card-footer">
                         <div class="stats">
-                            <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                            <i class="material-icons text-danger">warning</i> <a href="#pablo">Pay Mortgage...</a>
                         </div>
                     </div>
                 </div>

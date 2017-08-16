@@ -99,7 +99,7 @@
         } else {
 
             $graph = ($xml2->response->url);
-            echo "<img src= " . $graph . " class='text-center'>" . "<br>";
+            //echo "<img src= " . $graph . " class='text-center'>" . "<br>";
 
             //var_dump($xml2->response);
 
